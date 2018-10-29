@@ -2,6 +2,7 @@
 
 class StateMachine
 {
+public:;
 	enum States
 	{
 		StateFirstNumber,
@@ -13,8 +14,9 @@ public:
 	void SetState(States state);
 	States GetState();
 public:
-	StateMachine(States & sta);
+	StateMachine();
 	~StateMachine();
+	StateMachine(States sta);
 private:
 	States CurrentState;
 };

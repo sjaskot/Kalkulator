@@ -8,7 +8,8 @@ int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
 	Kalkulator w;
-    StateMachine CalculatorState(StateMachine States StateFirstNumber);
+    StateMachine CalculatorState(StateMachine::States::StateFirstNumber);
+
 	Expression e;
 	int temp = 0;
 	w.show();
